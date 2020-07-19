@@ -50,6 +50,7 @@ header .header-cover {
 header .header-text {
     position: absolute;
     text-align: center;
+    line-height: 2.75em;
     left: 0;
     right: 0;
     top: 50%;
