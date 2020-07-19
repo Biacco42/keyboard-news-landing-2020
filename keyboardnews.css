@@ -71,12 +71,14 @@ header .header-text h1 {
 /* section */
 section {
     width: 100vw;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
 }
 
 section .section-with-image {
     flex-wrap: wrap;
     display: flex;
-    padding: 7%;
+    margin: 7%;
 }
 
 section .section-with-image .image {
@@ -118,6 +120,18 @@ section .no-padding-top {
 
 section .no-padding-bottom {
     padding-bottom: 0;
+}
+
+section .no-margin-top {
+    margin-top: 0;
+}
+
+section .no-margin-bottom {
+    margin-bottom: 0;
+}
+
+section .border-lined {
+    border: 5px solid white;
 }
 
 /* introduction */
