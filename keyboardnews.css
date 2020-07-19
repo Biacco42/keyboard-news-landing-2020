@@ -73,6 +73,15 @@ header .header-text h1 {
     font-size: 2.2em;
 }
 
+footer .logo-link {
+    padding: 7%;
+    text-align: center;
+}
+
+footer img {
+    width: 30%;
+}
+
 /* section */
 
 section {
@@ -159,6 +168,24 @@ section .section-with-youtube .youtube-with-title p {
     margin-bottom: 1em;
 }
 
+/* section - links */
+
+section .image-links {
+    padding: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section .image-links .image {
+    flex: 0 1 180px;
+}
+
+section .image-links .image img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
 /* section utils */
 
 section .no-padding-top {
@@ -225,4 +252,10 @@ section .border-lined {
     color: #1EA4D9;
     font-size: 3em;
     margin-bottom: 1em;
+}
+
+/* links */
+
+.links {
+    background-color: #047BC4;
 }
