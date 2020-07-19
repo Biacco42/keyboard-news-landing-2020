@@ -76,8 +76,8 @@ section {
 }
 
 section .section-with-image {
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
     margin: 7%;
 }
 
@@ -91,19 +91,19 @@ section .section-with-image .image img {
     vertical-align: bottom;
 }
 
-section .description {
+section .section-with-image .description {
     flex: 1 1 320px;
     padding: 3% 5% 3% 5%;
 }
 
-section .description h1 {
+section .section-with-image .description h1 {
     font-size: 2em;
     font-weight: 700;
     line-height: 1.4em;
     padding-bottom: 1em;
 }
 
-section .description p {
+section .section-with-image .description p {
     font-size: 1.2em;
     font-weight: 400;
     line-height: 1.4em;
@@ -114,6 +114,11 @@ section .section-with-image-right {
     flex-direction: row-reverse;
 }
 
+section .section-with-youtube {
+
+}
+
+/* section utils */
 section .no-padding-top {
     padding-top: 0;
 }
@@ -141,7 +146,7 @@ section .border-lined {
 
 /* member */
 .member .section-with-image .image {
-    flex: 1 3 280px;
+    flex: 1 0 240px;
     padding: 3%;
 }
 
@@ -149,14 +154,14 @@ section .border-lined {
     background-color: #047BC4;
 }
 
-.member .description {
-    flex: 3 1 320px;
+.member .section-with-image .description {
+    flex: 3 0 360px;
 }
 
-.member .description {
+.member .section-with-image .description {
     color: white;
 }
 
-.member .description h1 {
+.member .section-with-image .description h1 {
     font-size: 3em;
 }
