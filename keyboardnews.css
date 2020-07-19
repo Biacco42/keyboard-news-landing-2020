@@ -6,7 +6,12 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 1.2em;
+}
+
 /* header */
+
 header {
     position: relative;
     height: 56.2vw;
@@ -65,15 +70,18 @@ header .header-text p {
 }
 
 header .header-text h1 {
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 /* section */
+
 section {
-    width: 100vw;
+    width: 100%;
     padding-top: 0.5px;
     padding-bottom: 0.5px;
 }
+
+/* section - image */
 
 section .section-with-image {
     display: flex;
@@ -100,25 +108,59 @@ section .section-with-image .description h1 {
     font-size: 2em;
     font-weight: 700;
     line-height: 1.4em;
-    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 section .section-with-image .description p {
-    font-size: 1.2em;
     font-weight: 400;
     line-height: 1.4em;
-    padding-bottom: 1em;
 }
 
 section .section-with-image-right {
     flex-direction: row-reverse;
 }
 
-section .section-with-youtube {
+/* section - youtube */
 
+section .section-with-youtube {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 7% 7% 7%;
+}
+
+section .section-with-youtube .youtube-with-title {
+    flex: 1 1 43%;
+    min-width: 320px;
+    padding: 2%;
+}
+
+section .section-with-youtube .youtube-with-title .youtube-wrapper {
+    height: 21vw;
+}
+
+@media (max-width: 840px) {
+    section .section-with-youtube .youtube-with-title .youtube-wrapper {
+        height: 42vw;
+    }
+}
+
+section .section-with-youtube .youtube-with-title iframe {
+    width: 100%;
+    height: 100%;
+}
+
+section .section-with-youtube .youtube-with-title h2 {
+    font-size: 1.4em;
+    color: #1EA4D9;
+    margin: 1em 0 0.5em 0;
+}
+
+section .section-with-youtube .youtube-with-title p {
+    margin-bottom: 1em;
 }
 
 /* section utils */
+
 section .no-padding-top {
     padding-top: 0;
 }
@@ -140,18 +182,20 @@ section .border-lined {
 }
 
 /* introduction */
+
 .introduction .description h1 {
     color: #1EA4D9;
 }
 
 /* member */
-.member .section-with-image .image {
-    flex: 1 0 240px;
-    padding: 3%;
-}
 
 .member {
     background-color: #047BC4;
+}
+
+.member .section-with-image .image {
+    flex: 1 0 240px;
+    padding: 3%;
 }
 
 .member .section-with-image .description {
@@ -164,4 +208,21 @@ section .border-lined {
 
 .member .section-with-image .description h1 {
     font-size: 3em;
+}
+
+/* pickup */
+
+.pickup {
+    text-align: center;
+}
+
+.pickup .header {
+    padding: 7% 7% 0 7%;
+    margin-bottom: 3%;
+}
+
+.pickup h1 {
+    color: #1EA4D9;
+    font-size: 3em;
+    margin-bottom: 1em;
 }
