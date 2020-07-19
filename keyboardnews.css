@@ -1,17 +1,12 @@
 @charset "UTF-8";
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    color: #202020;
+    color: #707070;
     padding: 0;
     margin: 0;
 }
 
-.test div {
-    width: 100vw;
-    height: 100vh;
-    background-color: #00C1DE;
-}
-
+/* header */
 header {
     position: relative;
     height: 56.2vw;
@@ -73,465 +68,81 @@ header .header-text h1 {
     font-size: 2em;
 }
 
-footer {
-    position: relative;
-    background: url(image/product-page-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100vh;
+/* section */
+section {
+    width: 100vw;
 }
 
-@media (max-width: 1024px) {
-    footer {
-        background-size: 100% auto;
-        height: 60vw;
-    }
-}
-
-footer .kbdnews-logo {
-    position: absolute;
-    bottom: 5vh;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 40%;
-}
-
-@media (max-width: 768px) {
-    footer .kbdnews-logo {
-        width: 50%;
-        bottom: 5%;
-    }
-}
-
-footer .product-page-button {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: #00C1DE;
-    padding: 1.3% 2% 1.3% 2%;
-    color: white;
-    font-size: x-large;
-}
-
-@media (max-width: 768px) {
-    footer .product-page-button {
-        font-size: 1rem;
-        padding: 3% 5% 3% 5%;
-    }
-}
-
-footer .product-page-button a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-p {
-    line-height: 1.8em;
-    font-size: 12pt;
-}
-
-a:link {
-    color: #202020;
-}
-
-a:visited {
-    color: #606060;
-}
-
-a:hover {
-    color: #606060;
-}
-
-a:active {
-    color: #606060;
-}
-
-.bg-1 {
-    background: url(image/bg-1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg-2 {
-    background: url(image/bg-2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg-3 {
-    background: url(image/bg-3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg-4 {
-    background: url(image/bg-4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg-5 {
-    background: url(image/bg-5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.credit-annotation {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 300;
-    font-size: 7pt;
-    float: right;
-    text-align: right;
-}
-
-.credit {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 300;
-    font-size: 10pt;
-    margin-left: 0.5rem;
-    float: right;
-    text-align: right;
-}
-
-.no_1 {
-    position: absolute;
-    right: 0;
-    bottom: 2em;
-    z-index: -1;
-}
-
-.no_3 {
-    position: absolute;
-    right: 5%;
-    top: 3%;
-}
-
-.zindex-10 {
-    z-index: 10;
-}
-
-.page-num-left, .page-num-right {
-    display: none;
-}
-
-@media (min-width: 1058px) {
-    .page-num-left {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        width: 25%;
-        left: 0;
-        bottom: 0.75rem;
-        padding-left: 5%;
-        padding-right: 2%;
-        border-bottom: 0.01px solid #202020;
-    }
-    .page-num-right {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        width: 25%;
-        right: 0;
-        bottom: 0.75rem;
-        padding-left: 2%;
-        padding-right: 5%;
-        border-bottom: 0.01px solid #202020;
-    }
-    .page-num-left p {
-        margin-right: 10%;
-        width: 1em;
-    }
-    .page-num-right p {
-        margin-left: 10%;
-        width: 1em;
-    }
-    .page-num-left img, .page-num-right img {
-        width: 10vw;
-    }
-    .page-num-white {
-        color: white;
-        border-bottom: 0.01px solid white;
-    }
-}
-
-.contents-bottom {
-    display: flex;
-    align-items: flex-end;
-}
-
-.bg-white h2 {
-    color: #00C1DE;
-}
-
-.bg-blue {
-    background: #00C1DE;
-}
-
-.bg-blue h2 {
-    color: white;
-}
-
-.lead-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: stretch;
-}
-
-.page {
-    flex: 1 0 520px;
-    align-content: space-between;
-}
-
-@media (max-width: 480px) {
-    .page {
-        flex: 1 0 375px;
-    }
-}
-
-.page-return {
-    width: 100%;
-}
-
-.flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-}
-
-.section-header {
-    padding: 0 0 10% 0;
-    flex: 0 1 100%;
-}
-
-.section-header img {
-    width: 100%;
-}
-
-.lead-box {
-    position: relative;
-}
-
-.content-box {
-    position: relative;
-}
-
-.content-column-justify {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.lead-section .lead-head, .lead-section .lead-lead {
-    font-family: 'Noto Sans JP', sans-serif;
-    transform-origin: top left;
-    transform: scale(0.82, 1);
-    line-height: 1.2em;
-}
-
-.lead-section .lead-head {
-    font-size: 32pt;
-    letter-spacing: -0.025em;
-    flex: 1 0 100%;
-    margin-bottom: 1.4em;
-}
-
-.lead-section .lead-lead {
-    font-size: 22pt;
-    letter-spacing: -0.01em;
-    flex: 0 0 9em;
-    margin-top: 1rem;
-}
-
-.lead-section p {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 300;
-    text-align: justify;
-}
-
-.lead-section .lead {
-    flex: 1 0 300px;
-    font-weight: 600;
-    margin-top: 1rem;
-}
-
-div.separator {
-    width: 100%;
-    border-bottom: solid 1px #202020;
-}
-
-.interview h3 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.6em;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
-
-.interview p {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-}
-
-.interview .interviewer {
-    font-weight: 600;
-}
-
-.interview .interviewer::before {
-    content: "──";
-}
-
-.interview .interviewee::before {
-    content: attr(data-interviewee);
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    margin-right: 1em;
-}
-
-.fullwidth-image {
-    flex: 0 1 100%;
-}
-
-.fullwidth-image img {
-    width: 100%;
-    vertical-align: bottom;
-}
-
-.present-image {
-    width: 100%;
-    vertical-align: bottom;
-}
-
-.image-with-contents {
+section .section-with-image {
     flex-wrap: wrap;
     display: flex;
-    padding: 5%;
+    padding: 7%;
 }
 
-.image-with-contents .image {
+section .section-with-image .image {
     flex: 1 1 280px;
     padding: 0.5px;
 }
 
-.image-with-contents .image img {
+section .section-with-image .image img {
     width: 100%;
     vertical-align: bottom;
 }
 
-.image-with-contents .contents {
+section .description {
     flex: 1 1 320px;
-    padding: 0 3% 0 3%;
+    padding: 3% 5% 3% 5%;
 }
 
-.image-with-contents h1 {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 42pt;
-    margin-top: 0.1em;
-    margin-bottom: 0.3em;
+section .description h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.4em;
+    padding-bottom: 1em;
 }
 
-.image-with-contents h2 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 20pt;
-    font-weight: 100;
-    padding-left: 0.1em;
-    padding-right: 0.1em;
-    margin-bottom: 1.5em;
+section .description p {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding-bottom: 1em;
 }
 
-.image-with-contents h3 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 16pt;
-    margin-top: 0.7em;
-    margin-bottom: 0.5em;
-}
-
-.image-with-contents p {
-    text-align: justify;
-}
-
-.image-with-contents .dialog {
-    font-size: 1.1em;
-    text-align: left;
-    text-indent: -1em;
-}
-
-.image-with-contents .dialog-auth {
-    font-weight: 600;
-    font-size: 11pt;
-    text-align: left;
-    margin-top: 0.5em;
-}
-
-.image-contents-reverse {
+section .section-with-image-right {
     flex-direction: row-reverse;
 }
 
-.image-contents-reverse h1, .image-contents-reverse h2, .image-contents-reverse p {
-    text-align: right;
-}
-
-.fullwidth-product-banner {
-    background: url(image/banner-precision.png) no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-}
-
-@media (max-width: 480px) {
-    .fullwidth-product-banner {
-        background-position: right 35% bottom;
-    }
-}
-
-.fullwidth-product-banner .contents {
-    background: #ffffffcc;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 15%;
-    padding: 5%;
-    width: 35%;
-}
-
-@media (max-width: 480px) {
-    .fullwidth-product-banner .contents {
-        margin-top: 8%;
-        margin-left: 8%;
-        margin-bottom: 50%;
-        padding: 8%;
-        width: 60vw;
-    }
-}
-
-.fullwidth-product-banner .contents h3 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 14pt;
-    font-weight: 600;
-    line-height: 1.6em;
-    margin-bottom: 0.8em;
-}
-
-.page-padding-5 {
-    padding: 5%;
-}
-
-.page-padding-10 {
-    padding: 10%;
-}
-
-.page-padding-bottom-10 {
-    padding-bottom: 10%;
-}
-
-.disable-padding-top {
+section .no-padding-top {
     padding-top: 0;
 }
 
-.disable-padding-bottom {
+section .no-padding-bottom {
     padding-bottom: 0;
+}
+
+/* introduction */
+.introduction .description h1 {
+    color: #1EA4D9;
+}
+
+/* member */
+.member .section-with-image .image {
+    flex: 1 3 280px;
+    padding: 3%;
+}
+
+.member {
+    background-color: #047BC4;
+}
+
+.member .description {
+    flex: 3 1 320px;
+}
+
+.member .description {
+    color: white;
+}
+
+.member .description h1 {
+    font-size: 3em;
 }
