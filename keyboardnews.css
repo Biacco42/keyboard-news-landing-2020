@@ -8,6 +8,7 @@ body {
 
 p {
     font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 /* header */
@@ -34,12 +35,6 @@ header iframe {
     min-height: 100vw;
 }
 
-@media (max-width: 768px) {
-    header iframe {
-        visibility: hidden;
-    }
-}
-
 header .header-cover {
     position: absolute;
     background-color: #000000aa;
@@ -50,19 +45,13 @@ header .header-cover {
 header .header-text {
     position: absolute;
     text-align: center;
-    line-height: 2.75em;
+    line-height: 2.5em;
     left: 0;
     right: 0;
     top: 50%;
     transform: translate(0, 8vw);
     color: white;
     font-weight: 700;
-}
-
-@media (max-width: 768px) {
-    header .header-text {
-        transform: translate(0, 0);
-    }
 }
 
 header .header-text p {
@@ -73,6 +62,22 @@ header .header-text h1 {
     font-size: 2.2em;
 }
 
+@media (max-width: 768px) {
+    header .header-text {
+        line-height: 2.5em;
+        transform: translate(0, 0);
+    }
+    header .header-text p {
+        font-size: 1.2em;
+    }
+    header .header-text h1 {
+        font-size: 1.5em;
+    }
+    header iframe {
+        visibility: hidden;
+    }
+}
+
 footer .logo-link {
     padding: 7%;
     text-align: center;
@@ -80,6 +85,12 @@ footer .logo-link {
 
 footer img {
     width: 30%;
+}
+
+@media (max-width: 768px) {
+    footer img {
+        width: 50%;
+    }
 }
 
 /* section */
@@ -160,6 +171,7 @@ section .section-with-youtube .youtube-with-title iframe {
 
 section .section-with-youtube .youtube-with-title h2 {
     font-size: 1.4em;
+    line-height: 1.6em;
     color: #1EA4D9;
     margin: 1em 0 0.5em 0;
 }
@@ -178,7 +190,7 @@ section .image-links {
 }
 
 section .image-links .image {
-    flex: 0 1 180px;
+    flex: 0 1 120px;
 }
 
 section .image-links .image img {
@@ -226,7 +238,7 @@ section .border-lined {
 }
 
 .member .section-with-image .description {
-    flex: 3 0 360px;
+    flex: 3 1 320px;
 }
 
 .member .section-with-image .description {
@@ -234,7 +246,7 @@ section .border-lined {
 }
 
 .member .section-with-image .description h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 /* pickup */
@@ -250,7 +262,7 @@ section .border-lined {
 
 .pickup h1 {
     color: #1EA4D9;
-    font-size: 3em;
+    font-size: 2.2em;
     margin-bottom: 1em;
 }
 
@@ -258,4 +270,16 @@ section .border-lined {
 
 .links {
     background-color: #047BC4;
+    text-align: center;
+    color: white;
+}
+
+.links h1 {
+    margin: 1em;
+    font-size: 2em;
+}
+
+.links p {
+    margin-left: 7%;
+    margin-right: 7%;
 }
