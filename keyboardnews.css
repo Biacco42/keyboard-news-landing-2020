@@ -87,6 +87,10 @@ footer img {
     width: 30%;
 }
 
+footer p {
+    margin-top: 2em;
+}
+
 @media (max-width: 768px) {
     footer img {
         width: 50%;
@@ -230,6 +234,18 @@ section .border-lined {
 
 .member {
     background-color: #047BC4;
+    text-align: center;
+    color: white;
+}
+
+.member h1 {
+    margin: 5% 0 2% 0;
+    font-size: 2em;
+}
+
+.member > p {
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .member .section-with-image .image {
@@ -239,10 +255,7 @@ section .border-lined {
 
 .member .section-with-image .description {
     flex: 3 1 320px;
-}
-
-.member .section-with-image .description {
-    color: white;
+    text-align: left;
 }
 
 .member .section-with-image .description h1 {
@@ -275,7 +288,7 @@ section .border-lined {
 }
 
 .links h1 {
-    margin: 1em;
+    margin: 5% 0 2% 0;
     font-size: 2em;
 }
 
