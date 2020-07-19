@@ -3,6 +3,8 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+let mobileWidth = 768;
+
 function onYouTubeIframeAPIReady() {
     ytPlayer = new YT.Player(
         'header-video',
@@ -27,12 +29,14 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
     event.target.mute();
-    event.target.playVideo();
+    if (mobileWidth < window.innerWidth) {
+        event.target.playVideo();
+    }
 }
 
 function onPlayerStateChange(event) {
     var ytStatus = event.target.getPlayerState();
-    if (ytStatus == YT.PlayerState.ENDED) {
+    if (ytStatus == YT.PlayerState.ENDED && mobileWidth < window.innerWidth) {
         event.target.mute();
         event.target.playVideo();
     }
