@@ -238,6 +238,10 @@ section .border-lined {
     margin: 2em;
 }
 
+.margin-bottom-2em {
+    margin-bottom: 2em;
+}
+
 .button {
     display: table-cell;
     vertical-align: middle;
@@ -254,6 +258,19 @@ section .border-lined {
 
 .introduction .description h1 {
     color: #1EA4D9;
+}
+
+/* social */
+
+.social {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.social iframe {
+    padding-right: 0.9em;
 }
 
 /* member */
