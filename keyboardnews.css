@@ -206,6 +206,41 @@ section .image-links .image img {
     vertical-align: bottom;
 }
 
+/* section - booth */
+
+section .booth-contents {
+    margin: 7%;
+    text-align: center;
+}
+
+section .booth-contents h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 1em;
+}
+
+@media (max-width: 768px) {
+    section .booth-contents h1 {
+        font-size: 1.5em;
+    }
+}
+
+section .booth-contents .product-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+section .booth-contents .product-photo .image {
+    flex: 0 1 280px;
+    padding: 0.5em;
+}
+
+section .booth-contents .product-photo .image img {
+    width: 100%;
+}
+
 /* section utils */
 
 section .no-padding-top {
@@ -228,6 +263,10 @@ section .border-lined {
     border: 5px solid white;
 }
 
+section .border-booth {
+    border: 5px solid #FC4D50;
+}
+
 /* util */
 
 .centering {
@@ -238,8 +277,8 @@ section .border-lined {
     margin: 2em;
 }
 
-.margin-bottom-2em {
-    margin-bottom: 2em;
+.margin-bottom-1_5em {
+    margin-bottom: 1.5em;
 }
 
 .button {
@@ -252,6 +291,12 @@ section .border-lined {
     background-color: #F26E22;
     color: white;
     text-align: center;
+}
+
+.booth-button {
+    background-color: #FC4D50;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* introduction */
@@ -286,7 +331,7 @@ section .border-lined {
     font-size: 2em;
 }
 
-.member > p {
+.member>p {
     margin-left: 7%;
     margin-right: 7%;
 }
@@ -338,4 +383,9 @@ section .border-lined {
 .links p {
     margin-left: 7%;
     margin-right: 7%;
+}
+
+.booth {
+    background-color: #F1F5F8;
+    color: #252F3D;
 }
