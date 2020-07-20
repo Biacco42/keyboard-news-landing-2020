@@ -224,6 +224,28 @@ section .border-lined {
     border: 5px solid white;
 }
 
+/* util */
+
+.centering {
+    text-align: center;
+}
+
+.margin-2em {
+    margin: 2em;
+}
+
+.button {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 3em;
+    height: 3em;
+    background-color: #F26E22;
+    color: white;
+    text-align: center;
+}
+
 /* introduction */
 
 .introduction .description h1 {
