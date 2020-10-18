@@ -82,6 +82,10 @@ header .header-text h1 {
     }
 }
 
+footer {
+    background-color: #F1F5F8;
+}
+
 footer .logo-link {
     padding: 7%;
     text-align: center;
@@ -194,6 +198,7 @@ section .image-links {
     padding: 7%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -239,6 +244,43 @@ section .booth-contents .product-photo .image {
 
 section .booth-contents .product-photo .image img {
     width: 100%;
+}
+
+/* section - sponsors */
+
+.sponsors {
+    text-align: center;
+}
+
+.sponsors h1 {
+    margin: 72px 0 32px 0;
+    font-size: 4em;
+}
+
+.sponsors p {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.sponsor-lists {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sponsor-lists .image {
+    flex: 0 1 360px;
+    margin: 80px;
+}
+
+.sponsor-lists .image img {
+    width: 100%;
+    vertical-align: bottom;
 }
 
 /* section utils */
