@@ -89,6 +89,9 @@ footer {
 footer .logo-link {
     padding: 7%;
     text-align: center;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;   
 }
 
 footer img {
@@ -118,12 +121,16 @@ section {
 section .section-with-image {
     display: flex;
     flex-wrap: wrap;
-    margin: 7%;
+    margin: 5% 7%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;   
 }
 
 section .section-with-image .image {
-    flex: 1 1 280px;
+    flex: 1 1 340px;
     padding: 0.5px;
+    margin: 5%;
 }
 
 section .section-with-image .image img {
@@ -133,7 +140,7 @@ section .section-with-image .image img {
 
 section .section-with-image .description {
     flex: 1 1 320px;
-    padding: 3% 5% 3% 5%;
+    padding: 7% 5% 7% 5%;
 }
 
 section .section-with-image .description h1 {
@@ -158,16 +165,19 @@ section .section-with-youtube {
     display: flex;
     flex-wrap: wrap;
     padding: 0 7% 7% 7%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 section .section-with-youtube .youtube-with-title {
     flex: 1 1 43%;
     min-width: 320px;
-    padding: 2%;
+    padding: 2% 2% 10%
 }
 
 section .section-with-youtube .youtube-with-title .youtube-wrapper {
-    height: 21vw;
+    height: 100%;
 }
 
 @media (max-width: 840px) {
@@ -195,15 +205,18 @@ section .section-with-youtube .youtube-with-title p {
 /* section - links */
 
 section .image-links {
-    padding: 7%;
+    padding: 5%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 section .image-links .image {
-    flex: 0 1 120px;
+    flex: 0 1 220px;
 }
 
 section .image-links .image img {
@@ -216,6 +229,9 @@ section .image-links .image img {
 section .booth-contents {
     margin: 7%;
     text-align: center;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;   
 }
 
 section .booth-contents h1 {
@@ -369,7 +385,7 @@ section .border-booth {
 }
 
 .member h1 {
-    margin: 5% 0 2% 0;
+    margin: 72px 0 32px 0;
     font-size: 2em;
 }
 
@@ -399,16 +415,20 @@ section .border-booth {
 }
 
 .pickup .header {
-    padding: 7% 7% 0 7%;
     margin-bottom: 3%;
 }
 
 .pickup h1 {
     color: #1EA4D9;
     font-size: 2.2em;
+    margin: 72px 0 32px 0;
     margin-bottom: 1em;
 }
 
+.pickup p {
+    margin-left: 7%;
+    margin-right: 7%;
+}
 /* links */
 
 .links {
@@ -418,7 +438,7 @@ section .border-booth {
 }
 
 .links h1 {
-    margin: 5% 0 2% 0;
+    margin: 72px 0 32px 0;
     font-size: 2em;
 }
 
